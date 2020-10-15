@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aquamarine">#7FFFD4</color>
+    <color name="blue">#4169e1</color>
+    <color name="brown">#7B6224</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gold">#ECC208</color>
+    <color name="green">#34B268</color>
+    <color name="lavender">#BA9CEE</color>
+    <color name="lightBlue">#D6EAFC</color>
+    <color name="lightOrange">#F1AA81</color>
+    <color name="orange">#FD4900</color>
+    <color name="pink">#FF91AF</color>
+    <color name="white">#FFFF</color>
+    <color name="yellow">#FFF700</color>
+    <color name="transparentWhite">#BFFFFFFF</color>
+    <color name="transparentYellow">#A1FFF700</color>
+</resources>

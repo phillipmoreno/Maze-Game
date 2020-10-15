@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+    tools:context=".RegistrationParent">
+
+    <!-- EditText added to input user first name -->
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button1_border"
+        android:fontFamily="@font/acme"
+        android:onClick="nextPage"
+        android:text="@string/register3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentPassword" />
+
+    <!-- EditText added to input user last name -->
+    <EditText
+        android:id="@+id/lastName"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_face_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint4"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapSentences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentFirstName" />
+
+    <!-- EditText added to input user date of birth -->
+    <EditText
+        android:id="@+id/parentDateOfBirth"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_date_range_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint5"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <!-- EditText added to input user email -->
+    <EditText
+        android:id="@+id/parentEmail"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_mail_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentDateOfBirth" />
+
+    <!-- EditText added to input user password -->
+    <EditText
+        android:id="@+id/parentPassword"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parentEmail" />
+
+    <!-- TextView added to display page name -->
+    <EditText
+        android:id="@+id/parentFirstName"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_face_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint3"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapSentences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <!-- Button added to complete registration -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:shadowColor="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="7"
+        android:text="@string/register2"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

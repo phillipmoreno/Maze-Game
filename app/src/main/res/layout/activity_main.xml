@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Constraint layout used for this activity -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- ImageView added to display a user logo image -->
+
+    <!-- EditText added for user email input -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button1_border"
+        android:fontFamily="@font/acme"
+        android:onClick="verifyLoginChild"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+
+    <!-- EditText added for user password input -->
+    <Button
+        android:id="@+id/completeRegistration"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/register_button_border"
+        android:fontFamily="@font/acme"
+        android:onClick="openRegistration"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="300dp"
+        android:layout_height="38sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_mail_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <!-- Button added for login action -->
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="300dp"
+        android:layout_height="38sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textview1_border"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
+
+    <!-- Button added for register action -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="205dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kodable_login2"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/hard_button_border"
+        android:fontFamily="@font/acme"
+        android:onClick="verifyLoginParent"
+        android:text="@string/login2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
